@@ -1,76 +1,112 @@
 <!DOCTYPE html> 
 <html lang="vi"> 
 <head>
-    <meta charset="UTF-8"> <!--  Giúp hiển thị tiếng Việt không bị lỗi font -->
-   \
+    <meta charset="UTF-8">
     <title>CV - Trần Xuân Bách</title>
-  
+    
+    <style>
+        /* 1. Thiết lập chung cho toàn trang */
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Đổi font chữ cho dễ nhìn */
+            line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+            background-color: #f4f4f4; /* Màu nền xám nhẹ cho trang web */
+            color: #333; /* Màu chữ đen xám dịu mắt hơn đen tuyền */
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 2. Tạo khung bao quanh nội dung (giống tờ giấy A4) */
+        .cv-container {
+            max-width: 800px; /* Chiều rộng tối đa */
+            margin: 0 auto; /* Canh giữa trang */
+            background-color: #ffffff; /* Nền trắng cho nội dung CV */
+            padding: 40px; /* Khoảng cách từ nội dung đến viền */
+            border-radius: 8px; /* Bo tròn góc nhẹ */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Tạo bóng đổ nhẹ cho nổi bật */
+        }
+
+        /* 3. Trang trí tiêu đề tên */
+        h1 {
+            color: #2c3e50; /* Màu xanh đậm */
+            text-align: center; /* Canh giữa tên */
+            text-transform: uppercase; /* Viết hoa toàn bộ */
+            margin-bottom: 5px;
+        }
+
+        /* 4. Thông tin liên hệ */
+        .contact-info {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* 5. Trang trí tiêu đề mục (Mục tiêu, Học vấn...) */
+        h2 {
+            color: #0056b3; /* Màu xanh dương chuyên nghiệp */
+            border-bottom: 2px solid #eee; /* Đường kẻ dưới thay cho thẻ hr */
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        /* 6. Làm đẹp danh sách */
+        ul {
+            margin-top: 5px;
+        }
+        
+        li {
+            margin-bottom: 5px; /* Khoảng cách giữa các gạch đầu dòng */
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Trần Xuân Bách</h1> 
-    
-    <p>Sinh viên An toàn Thông tin - Đại học Kinh tế TP.HCM (UEH)</p>
-    <p>Email: tranxuanbachpy2007@gmail.com       SĐT: 0367204600 </p>
-    <p>Địa chỉ: TP. Hồ Chí Minh</p>
-    
-    <!-- Thẻ hr: Tạo một đường kẻ ngang dài hết trang để ngăn cách các phần -->
-    <hr> 
 
-    <h2>Mục tiêu nghề nghiệp</h2> 
-    <!-- Thẻ h2: Tiêu đề phụ, nhỏ hơn h1 -->
+    <div class="cv-container">
 
-    <p>
-        Là sinh viên năm 1 chuyên ngành An toàn thông tin, em mong muốn tìm kiếm cơ hội học tập
-        để học hỏi kiến thức về <b>Pentest</b> và <b>Quản trị mạng</b> vào thực tế. <!-- Thẻ b: In đậm  -->
-        Phấn đấu trở thành chuyên gia bảo mật trong 5 năm tới. ()
-    </p>
+        <h1>Trần Xuân Bách</h1> 
+        
+        <div class="contact-info">
+            <p>Sinh viên An toàn Thông tin - Đại học Kinh tế TP.HCM (UEH)</p>
+            <p>Email: tranxuanbachpy2007@gmail.com | SĐT: 0367204600</p>
+            <p>Địa chỉ: TP. Hồ Chí Minh</p>
+        </div>
 
-    <hr> <!-- Kẻ ngang ngăn cách   -->
+        <h2>Mục tiêu nghề nghiệp</h2> 
+        <p>
+            Là sinh viên năm 1 chuyên ngành An toàn thông tin, em mong muốn tìm kiếm cơ hội học tập
+            để áp dụng kiến thức về <b>Pentest</b> và <b>Quản trị mạng</b> vào thực tế.
+            Phấn đấu trở thành chuyên gia bảo mật trong 5 năm tới.
+        </p>
 
-    
-    <h2>Học vấn</h2>
-    
-    <!-- Dùng thẻ b để in đậm  -->
-    <p><b>Trường Đại học Kinh tế TP.HCM (UEH)</b></p> 
-    
-    <!-- Dùng thẻ i để in nghiêng -->
-    <p><i>Chuyên ngành: An toàn thông tin</i></p> 
-    
-    <p>Thời gian: 2025 - 2029 </p>
-    <p>Điểm trung bình mong muốn 4.0 </p>
+        <h2>Học vấn</h2>
+        <p><b>Trường Đại học Kinh tế TP.HCM (UEH)</b></p> 
+        <p><i>Chuyên ngành: An toàn thông tin</i></p> 
+        <p>Thời gian: 2025 - 2029 </p>
+        <p>Điểm trung bình mong muốn: 4.0 </p>
 
-    <hr>
+        <h2>Kỹ năng chuyên môn</h2>
+        <ul> 
+            <li>Kiến thức về mạng máy tính (TCP/IP, OSI Model).</li> 
+            <li>Lập trình cơ bản: Python, C++, HTML.</li>
+            <li>Sử dụng các công cụ: Wireshark, Nmap, Burp Suite.</li>
+            <li>Hiểu biết về lỗ hổng bảo mật web (OWASP Top 10).</li>
+            <li>Tiếng Anh: Đọc hiểu tài liệu chuyên ngành tốt.</li>
+        </ul>
 
-    <h2>Kỹ năng chuyên môn</h2>
-    
-    <!-- Thẻ ul: Tạo danh sách không thứ tự (dấu chấm tròn) -->
-    <ul> 
-        <li>Kiến thức về mạng máy tính (TCP/IP, OSI Model).</li> <!-- Thẻ li: Từng mục trong danh sách -->
-        <li>Lập trình cơ bản: Python, C++, HTML.</li>
-        <li>Sử dụng các công cụ: Wireshark, Nmap, Burp Suite.</li>
-        <li>Hiểu biết về lỗ hổng bảo mật web (OWASP Top 10).</li>
-        <li>Tiếng Anh: Đọc hiểu tài liệu chuyên ngành tốt.</li>
-    </ul>
+        <h2>Hoạt động & Dự án</h2>
+        
+        <h3>Tham gia CLB ET CLUB </h3>
+        <p><i>Vai trò: CTV ET CLUB </i></p>
+        <ul>
+            <li>Biết được cách dùng HTML cơ bản và làm quen với Git.</li>
+            <li>Học được cách làm việc nhóm và tư duy phản biện.</li>
+        </ul>
 
-    <hr>
-
-  
-    <h2>Hoạt động & Dự án</h2>
-    
-    <!-- Dự án 1 -->
-    <h3>Tham gia CLB ET CLUB </h3> <!-- Thẻ h3: Tiêu đề nhỏ hơn h2 -->
-    <p><i>Vai trò: CTV ET CLUB </i></p>
-    <ul>
-        <li>Biết được cách dùng HTML cơ bản và gặp khó khăn nhiều chút với Git.</li>
-        <li>Học được cách làm việc nhóm và tư duy phản biện.</li>
-    </ul>
-
-    <!-- Thẻ br: Xuống dòng -->
-    <br> 
-
-    <hr>
-   
-
-</body>
+    </div> </body>
 </html>
